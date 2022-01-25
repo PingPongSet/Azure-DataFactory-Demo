@@ -1,0 +1,9 @@
+{
+	"name": "rlamv2ADFTutorialDataFactory",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b279f3e8-2505-41ad-858c-b41691789dee",
+		"tenantId": "0240c7f5-74cf-4158-8176-ab00fdfa301a"
+	}
+}
