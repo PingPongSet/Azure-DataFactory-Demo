@@ -1,0 +1,33 @@
+{
+	"name": "BlobToCosmosDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BlobToCosmosDBLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "users.csv",
+				"container": "blob2cosmos"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "grade",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
